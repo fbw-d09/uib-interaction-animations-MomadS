@@ -1,0 +1,28 @@
+.strobe 
+{
+    width: 100px;
+    height: 500px;
+    background-color: white;
+    display: inline-block;
+    animation: strobe-animation 2s ease-in;
+}
+  
+@keyframes strobe-animation 
+{
+    0% {
+      background-color: blue;
+    }
+    50% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: blue;
+    }
+}
+  
+.strobe:hover 
+{
+    animation: none;
+    background-color: yellow;
+}
+  
